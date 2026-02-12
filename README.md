@@ -13,7 +13,7 @@ This implementation goes beyond basic regression by applying domain-specific dat
 
     Sensor Filtering: Reduced dimensionality and noise by removing zero-variance sensors (s1, s5, s10, s16, s18, and s19) that do not contribute to the degradation signal.
 
-    Temporal Feature Engineering: Implemented rolling window statistics (Rolling Mean) to capture the trajectory of sensor values, which is a more stable indicator of wear than raw point-in-time snapshots.
+    Temporal Feature Engineering: Implemented rolling window statistics to capture the trajectory of sensor values, which is a more stable indicator of wear than raw point-in-time snapshots.
 
 📊 Dataset
 
@@ -27,8 +27,13 @@ The project utilizes the NASA CMAPSS (Commercial Modular Aero-Propulsion System 
 
 🚀 Model Performance
 
-    Algorithm: [Insert your model name, e.g., XGBoost / Random Forest]
+    Algorithm: [HistGradientBoostingRegressor]
 
-    Metric: RMSE (Root Mean Squared Error) of 18.8.
+    Metric: 
+    Model Accuracy on Unseen Engines:
+    Mean Absolute Error: 13.84 cycles
+    Root Mean Squared Error: 18.87 cycles
+    R^2 Score: 0.7939
 
-    Observation: The model shows high precision in the final 30 cycles of engine life, which is the most critical window for maintenance scheduling.
+
+Observation: The model shows high precision in the final 30 cycles of engine life, which is the most critical window for maintenance scheduling.
