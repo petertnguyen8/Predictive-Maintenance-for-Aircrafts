@@ -29,7 +29,7 @@ The project utilizes the NASA CMAPSS (Commercial Modular Aero-Propulsion System 
 
     Algorithm: [HistGradientBoostingRegressor]
 
-    Metric: 
+    Metrics: 
     Model Accuracy on Unseen Engines:
     Mean Absolute Error: 13.84 cycles
     Root Mean Squared Error: 18.87 cycles
